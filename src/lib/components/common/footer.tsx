@@ -18,7 +18,7 @@ export default function Footer() {
           </NextLink>
         </div>
     </div>
-    <div className="h-96"></div>
+    <div className="h-64"></div>
     {/* MARQUEE */}
     <Section sectionProps={{ className: "border-t border-t-guides" }} guides={false} contained={false}>
           <InfiniteSlider

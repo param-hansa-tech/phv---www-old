@@ -1,12 +1,12 @@
 import { TextSans, TextSerif } from "@/lib/components/atoms/text";
 import Page from "@/lib/components/common/page";
-import Section from "@/lib/components/misc";
+import Section, { Guides } from "@/lib/components/misc";
 import UnicornComponent from "@/lib/components/misc/unicorn";
 
 export default function Philosophy() {
   return (
     <Page>
-         <Section>
+         <Section sectionProps={{ className: "relative z-8" }}>
         <div className="w-full h-screen flex flex-col">
           <div className="flex-grow" />
           <TextSerif className="w-full px-2" tScale="h1" as="h1">
@@ -45,9 +45,14 @@ export default function Philosophy() {
       </Section>
 
       {/* ASSET */}
-      <Section sectionProps={{ className: "-mt-60 md:-mt-40" }}>
+      <Section sectionProps={{ className: "relative z-9 -mt-60 md:-mt-40" }}>
         <div className="border border-guides">
           <UnicornComponent />
+        </div>
+      </Section>
+      <Section sectionProps={{ className: "-mt-20 relative z-10 z-10" }}>
+        <div className="h-64 w-full bg-background border-t border-t-guides">
+          <Guides />
         </div>
       </Section>
     </Page>
