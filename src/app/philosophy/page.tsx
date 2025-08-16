@@ -1,6 +1,7 @@
 import { TextSans, TextSerif } from "@/lib/components/atoms/text";
 import Page from "@/lib/components/common/page";
 import Section from "@/lib/components/misc";
+import UnicornComponent from "@/lib/components/misc/unicorn";
 
 export default function Philosophy() {
   return (
@@ -40,6 +41,13 @@ export default function Philosophy() {
             </Link> */}
           </div>
           <div className="flex-grow pointer-events-none" />
+        </div>
+      </Section>
+
+      {/* ASSET */}
+      <Section sectionProps={{ className: "-mt-60 md:-mt-40" }}>
+        <div className="border border-guides">
+          <UnicornComponent />
         </div>
       </Section>
     </Page>
