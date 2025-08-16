@@ -23,10 +23,10 @@ export default function Contact() {
             <div className="flex flex-row items-center gap-2 mt-12">
               <MapPinIcon className="h-6 w-6" />
               <TextSans as="p" tScale="p1" className="">
-                ADDRESS
+                Address
               </TextSans>
             </div>
-            <TextSans as="p" tScale="p2" color="secondary" className=" mt-1 ml-8">
+            <TextSans as="p" tScale="p1" tColor="secondary" className=" mt-1 ml-8">
               Param Hansa Values, Tampa, Florida - 33558, USA <br />
               {/* Bilimora - 396325, Dist. Navsari, Gujarat, India. <br /> */}
               {/* <Link
@@ -41,11 +41,11 @@ export default function Contact() {
             <div className="flex flex-row items-center gap-3 mt-12">
               <PhoneIcon className="h-5 w-5" />
               <TextSans as="p" tScale="p1" className="">
-                PHONE
+                Phone
               </TextSans>
             </div>
 
-            <TextSans as="p" tScale="p2" color="secondary" className=" mt-1 ml-8">
+            <TextSans as="p" tScale="p1" tColor="secondary" className=" mt-1 ml-8">
               Rakesh Kumar&nbsp;&nbsp;—&nbsp;&nbsp;
               <Link
                 href="tel:+919558817397"
@@ -59,14 +59,14 @@ export default function Contact() {
             <div className="flex flex-row items-center gap-3 mt-12">
               <MailIcon className="h-5 w-5" />
               <TextSans as="p" tScale="p1" className="">
-                EMAIL
+                Email
               </TextSans>
             </div>
 
             <TextSans
               as="span"
-              tScale="p2"
-              color="secondary"
+              tScale="p1"
+              tColor="secondary"
               className="text-blue-600 underline underline-offset-2 mt-1 ml-8"
             >
               <Link href="mailto:info@phvalues.org">
