@@ -1,103 +1,139 @@
-import Image from "next/image";
+import Page from "@/components/common/page";
+import Section from "@/components/misc";
+import { TextSans, TextSerif } from "@/components/atoms/text";
+import { InfiniteSlider } from "@/lib/components/motion-primitives/infinite-slider";
+import Link from "@/components/atoms/link";
+import { ArrowRight } from "lucide-react";
+// import UnicornComponent from "@/lib/components/misc/unicorn";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <Page>
+        {/* HOMEPAGE HERO */}
+        <Section>
+          <div className="w-full h-screen flex flex-col">
+            <div className="flex-grow" />
+            <TextSerif className="w-full px-2" tScale="h1" as="h1">
+              <span className="float-left">
+                Investing in <i>good</i>,
+              </span>
+              <br />
+              <span className="float-right">where purpose meets growth</span>
+            </TextSerif>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            <div className="grid grid-cols-4 -mb-32 md:-mb-64">
+              <TextSans
+                className="col-start-1 col-span-4 md:col-start-3 md:col-span-2 w-full px-2 py-16 md:py-32"
+                tScale="p1"
+                tColor="secondary"
+              >
+                Discover Param Hansa Investments : Where spiritual wisdom meets
+                disciplined value investing. We empower startups to mature
+                ventures with direct stakes and fund allocations, driving
+                innovation and societal good for lasting impact.
+              </TextSans>
+
+              <Link
+                className="col-start-1 col-span-4 md:col-start-3 md:col-span-1"
+                href="/about"
+                suffix={<ArrowRight className="h-8 mr-4" />}
+              >
+                Our Investments
+              </Link>
+              <Link
+                className="col-start-1 col-span-4 md:col-start-4 md:col-span-1"
+                href="/about"
+                suffix={<ArrowRight className="h-8 mr-4" />}
+              >
+                Our Philosophy
+              </Link>
+            </div>
+            <div className="flex-grow pointer-events-none" />
+          </div>
+        </Section>
+
+        {/* MARQUEE */}
+        <Section contained={false}>
+          <InfiniteSlider
+            className="py-8 md:py-8 lg:py-16 xl:py-32 text-dark"
+            gap={24}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+            <TextSans tScale="h1">
+              Inspired investments, grounded returns : Fostering harmony through
+              capital.
+            </TextSans>
+          </InfiniteSlider>
+        </Section>
+
+        {/* ASSET */}
+        <Section>
+          <div className="grid grid-cols-1 md:grid-cols-2 border border-guides py-32">
+            <div className="bg-white w-full aspect-square flex flex-col items-center justify-end">
+              <TextSerif tScale="h5" className="pb-16">
+                Paramhansa Yogananda
+              </TextSerif>
+            </div>
+            <div className="bg-white w-full aspect-square flex flex-col items-center justify-end">
+              <TextSerif tScale="h5" className="pb-16">
+                Ben Graham
+              </TextSerif>
+            </div>
+          </div>
+        </Section>
+
+        {/* ABOUT */}
+        <Section>
+          <div className="pt-32 pb-16">
+            <TextSans className="md:pr-12 px-2" tScale="h2" as="h2">
+              Param Hansa Values is Swapna and Dheeraj Pandey&apos;s private
+              investment firm.{" "}
+              <TextSans className="opacity-60" as="span">
+                At Param Hansa Values, we believe in investing for good –
+                driving growth, innovation, and positive change.
+              </TextSans>
+            </TextSans>
+            <div className="grid grid-cols-4 mt-16">
+              <TextSans
+                className="border-y border-guides col-start-1 col-span-4 md:col-start-3 md:col-span-2 px-2 pt-8 pb-16"
+                tColor="secondary"
+                tScale="p1"
+                as="p"
+              >
+                Our approach combines direct investments in public and private
+                companies with indirect capital allocations to funds, venture
+                capital, and private equity.
+              </TextSans>
+              <TextSans
+                className="border-y border-guides col-start-1 col-span-4 md:col-start-3 md:col-span-2 px-2 pt-8 pb-16"
+                tColor="secondary"
+                tScale="p1"
+                as="p"
+              >
+                We actively support businesses at all stages of their growth
+                journey, from early and emerging startups to late-stage growth
+                equity ventures. By making anchor investments and co-investing
+                with leading venture capital firms, we help unlock potential and
+                foster sustainable progress.
+              </TextSans>
+            </div>
+          </div>
+        </Section>
+
+        {/* ABOUT */}
+        <Section>
+          <div className="grid grid-cols-2 md:grid-cols-4 pb-32 ">
+            {new Array(8).fill(0).map((o, i) => (
+              <div
+                key={i}
+                className="bg-white w-full aspect-square border border-guides flex flex-col items-center justify-center"
+              >
+                <TextSans tScale="h5">LOGO</TextSans>
+              </div>
+            ))}
+          </div>
+        </Section>
+      </Page>
+    </>
   );
 }
