@@ -16,10 +16,10 @@ export default function Home() {
             <div className="flex-grow" />
             <TextSerif className="w-full px-2" tScale="h1" as="h1">
               <span className="float-left">
-              Investments for good
+              Investments for <i>good</i>,
               </span>
               <br />
-              <span className="float-right">where wisdom with growth</span>
+              <span className="float-right">where wisdom meets growth.</span>
             </TextSerif>
 
             <div className="grid grid-cols-4 -mb-32 md:-mb-64">
@@ -69,13 +69,13 @@ export default function Home() {
         {/* ASSET */}
         <Section>
           <div className="grid grid-cols-1 md:grid-cols-2 border border-guides py-32">
-            <div className="bg-white w-full aspect-square flex flex-col items-center justify-end">
-              <TextSerif tScale="h5" className="pb-16">
+            <div className="bg-white w-full aspect-square flex flex-col items-center justify-end border-y border-y-guides border-r-[0.5] border-r-guides">
+              <TextSerif tScale="h5" className="pb-8">
                 Paramhansa Yogananda
               </TextSerif>
             </div>
-            <div className="bg-white w-full aspect-square flex flex-col items-center justify-end">
-              <TextSerif tScale="h5" className="pb-16">
+            <div className="bg-white w-full aspect-square flex flex-col items-center justify-end border-y border-y-guides border-l-[0.5] border-l-guides">
+              <TextSerif tScale="h5" className="pb-8">
                 Ben Graham
               </TextSerif>
             </div>
@@ -85,11 +85,11 @@ export default function Home() {
         {/* ABOUT */}
         <Section>
           <div className="pt-32 pb-16">
-            <TextSans className="md:pr-12 px-2" tScale="h2" as="h2">
+            <TextSans className="px-2" tScale="h2" as="h2">
               Param Hansa Values is Swapna and Dheeraj Pandey&apos;s private
               investment firm.{" "}
               <TextSans className="opacity-60" as="span">
-                At Param Hansa Values, we believe in investing for good –
+                At Param Hansa Values, we believe in investing for good —
                 driving growth, innovation, and positive change.
               </TextSans>
             </TextSans>

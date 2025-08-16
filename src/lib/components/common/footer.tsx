@@ -1,3 +1,6 @@
+import { TextSans } from "@/components/atoms/text";
+import Section from "@/components/misc";
+import { InfiniteSlider } from "@/components/motion-primitives/infinite-slider";
 import { PHPLogo } from "./brand";
 import NextLink from "next/link";
 
@@ -16,6 +19,17 @@ export default function Footer() {
         </div>
     </div>
     <div className="h-96"></div>
+    {/* MARQUEE */}
+    <Section sectionProps={{ className: "border-t border-t-guides" }} guides={false} contained={false}>
+          <InfiniteSlider
+            className="py-8"
+            gap={24}
+          >
+            <TextSans className="opacity-50" tScale="h1">
+            Param Hansa Investments. Param Hansa Investments.
+            </TextSans>
+          </InfiniteSlider>
+        </Section>
     </footer>
   );
 }
