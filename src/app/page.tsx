@@ -16,10 +16,10 @@ export default function Home() {
             <div className="flex-grow" />
             <TextSerif className="w-full px-2" tScale="h1" as="h1">
               <span className="float-left">
-              Investments for <i>good</i>,
+              Investing for <i>good</i> — where 
               </span>
               <br />
-              <span className="float-right">where wisdom meets growth.</span>
+              <span className="float-right">wisdom meets growth.</span>
             </TextSerif>
 
             <div className="grid grid-cols-4 -mb-32 md:-mb-64">
@@ -36,14 +36,14 @@ export default function Home() {
 
               <Link
                 className="col-start-1 col-span-4 md:col-start-3 md:col-span-1"
-                href="/about"
+                href="/portfolio"
                 suffix={<ArrowRight className="h-8 mr-4" />}
               >
                 Our Investments
               </Link>
               <Link
                 className="col-start-1 col-span-4 md:col-start-4 md:col-span-1"
-                href="/about"
+                href="/philosophy"
                 suffix={<ArrowRight className="h-8 mr-4" />}
               >
                 Our Philosophy

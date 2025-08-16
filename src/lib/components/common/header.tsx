@@ -20,7 +20,7 @@ export default function Header() {
         <div className="hidden md:block col-start-13 col-span-4">
           <Link
             border={false}
-            href="/about"
+            href="/contact"
             suffix={<ArrowRight className="h-8 mr-4" />}
           >
             Contact Us
