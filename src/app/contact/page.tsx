@@ -14,7 +14,7 @@ export default function Contact() {
   return (
     <Page>
       <Section>
-        <div className="grid grid-cols-2 pt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 pt-16">
           <div className="flex flex-col gap-0 py-16 px-2">
             <TextSans tScale="h3" as="h1">
               Get in touch
@@ -26,7 +26,12 @@ export default function Contact() {
                 Address
               </TextSans>
             </div>
-            <TextSans as="p" tScale="p1" tColor="secondary" className=" mt-1 ml-8">
+            <TextSans
+              as="p"
+              tScale="p1"
+              tColor="secondary"
+              className=" mt-1 ml-8"
+            >
               Param Hansa Values, Tampa, Florida - 33558, USA <br />
               {/* Bilimora - 396325, Dist. Navsari, Gujarat, India. <br /> */}
               {/* <Link
@@ -45,7 +50,12 @@ export default function Contact() {
               </TextSans>
             </div>
 
-            <TextSans as="p" tScale="p1" tColor="secondary" className=" mt-1 ml-8">
+            <TextSans
+              as="p"
+              tScale="p1"
+              tColor="secondary"
+              className=" mt-1 ml-8"
+            >
               Rakesh Kumar&nbsp;&nbsp;—&nbsp;&nbsp;
               <Link
                 href="tel:+919558817397"
@@ -53,7 +63,6 @@ export default function Contact() {
               >
                 +91 98765 43210
               </Link>
-
             </TextSans>
 
             <div className="flex flex-row items-center gap-3 mt-12">
@@ -69,9 +78,7 @@ export default function Contact() {
               tColor="secondary"
               className="text-blue-600 underline underline-offset-2 mt-1 ml-8"
             >
-              <Link href="mailto:info@phvalues.org">
-                info@phvalues.org
-              </Link>
+              <Link href="mailto:info@phvalues.org">info@phvalues.org</Link>
             </TextSans>
           </div>
           <div className="flex flex-col gap-4 p-2">
