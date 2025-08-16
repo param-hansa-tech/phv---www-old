@@ -16,10 +16,10 @@ export default function Home() {
             <div className="flex-grow" />
             <TextSerif className="w-full px-2" tScale="h1" as="h1">
               <span className="float-left">
-                Investing in <i>good</i>,
+              Investments for good
               </span>
               <br />
-              <span className="float-right">where purpose meets growth</span>
+              <span className="float-right">where wisdom with growth</span>
             </TextSerif>
 
             <div className="grid grid-cols-4 -mb-32 md:-mb-64">
@@ -28,7 +28,7 @@ export default function Home() {
                 tScale="p1"
                 tColor="secondary"
               >
-                Discover Param Hansa Investments : Where spiritual wisdom meets
+                Discover Param Hansa Investments, where spiritual wisdom meets
                 disciplined value investing. We empower startups to mature
                 ventures with direct stakes and fund allocations, driving
                 innovation and societal good for lasting impact.

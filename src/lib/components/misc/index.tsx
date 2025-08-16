@@ -21,7 +21,7 @@ export default function Section({
 
       {/* GUIDELINES */}
       {guides ? (
-        <div className="w-full h-full m-auto max-w-7xl px-2">
+        <div className="w-full h-full m-auto max-w-6xl px-2">
           <Guides />
         </div>
       ) : (
@@ -30,7 +30,7 @@ export default function Section({
 
       {/* ABOVE GUIDELINES */}
       {contained ? (
-        <div className="w-full h-full m-auto max-w-7xl px-2">
+        <div className="w-full h-full m-auto max-w-6xl px-2">
           {restProps.children}
         </div>
       ) : (
